@@ -629,6 +629,13 @@ require('lazy').setup({
         javascriptreact = { { 'prettierd', 'prettier' } },
         typescript = { { 'prettierd', 'prettier' } },
         typescriptreact = { { 'prettierd', 'prettier' } },
+        json = { { 'prettierd', 'prettier' } },
+        md = { { 'prettierd', 'prettier' } },
+        html = { { 'prettierd', 'prettier' } },
+        rust = { 'rustfmt' },
+        go = { 'gofmt' },
+        terraform = { 'terraform_fmt' },
+
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
