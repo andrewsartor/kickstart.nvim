@@ -546,7 +546,7 @@ require('lazy').setup({
         -- clangd = {},
         -- gopls = {},
         -- pyright = {},
-        -- rust_analyzer = {},
+        rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -737,6 +737,13 @@ require('lazy').setup({
           { name = 'path' },
         },
       }
+    end,
+  },
+  {
+    'mfussenegger/nvim-lint',
+    event = 'VeryLazy',
+    config = function()
+      require 'custom.configs.lint'
     end,
   },
 
