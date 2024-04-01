@@ -3,4 +3,9 @@
 --
 -- See the kickstart.nvim README for more information
 
-return {}
+return {
+  vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Half page down and center cursor' }),
+  vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'Half page up and center cursor' }),
+  vim.keymap.set('n', 'n', 'nzz', { desc = 'Go to [n]ext occurence, center cursor' }),
+  vim.keymap.set('n', 'N', 'Nzz', { desc = 'Go to [N]ext (previous) occurence, center cursor' }),
+}
