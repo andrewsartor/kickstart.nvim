@@ -99,8 +99,10 @@ vim.g.have_nerd_font = false
 --  For more options, you can see `:help option-list`
 
 -- Change Tab Width
-vim.opt.tabstop = 4
+vim.opt.tabstop = 8
 vim.opt.softtabstop = 4
+vim.opt.smartindent = true
+vim.opt.autoindent = true
 
 -- Make line numbers default
 vim.opt.number = true
